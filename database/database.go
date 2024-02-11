@@ -24,7 +24,7 @@ func Connect() {
 	if err != nil {
 		log.Fatal(err)
 	}
-	dsn := fmt.Sprintf("host=%s user=%s password=%s dbname=%s port=%d sslmode=disable TimeZone=Asia/Shanghai",
+	dsn := fmt.Sprintf("host=%s user=%s password=%s dbname=%s port=%d sslmode=disable",
 		config.Config("POSTGRES_HOST"), config.Config("POSTGRES_USER"),
 		config.Config("POSTGRES_PASSWORD"), config.Config("POSTGRES_DB"), port)
 
